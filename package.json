@@ -1,6 +1,6 @@
 {
   "name": "philips-phlowchart",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Grafana panel plugin to render interactive flowchart visualization of directed graph data.",
   "scripts": {
     "build": "grafana-toolkit plugin:build",
@@ -17,12 +17,13 @@
     "glob-parent": "5.1.2",
     "d3-selection": "3.0.0",
     "@types/react": "17.0.2",
-    "@types/react-dom": "17.0.2"
+    "@types/react-dom": "17.0.2",
+    "moment": "2.29.4"
   },
   "devDependencies": {
-    "@grafana/data": "8.5.1",
-    "@grafana/toolkit": "8.5.1",
-    "@grafana/ui": "8.5.1",
+    "@grafana/data": "9.0.7",
+    "@grafana/toolkit": "9.0.7",
+    "@grafana/ui": "9.0.7",
     "@types/dagre": "0.7.47",
     "emotion": "10.0.27"
   },

@@ -2,10 +2,9 @@
 // Copyright (c) 2022 Koninklijke Philips N.V., https://www.philips.com
 
 import React, { useState, useEffect } from 'react';
-import { getFieldDisplayName, LoadingState, PanelProps } from '@grafana/data';
+import { getFieldDisplayName, LoadingState, PanelProps, GrafanaTheme } from '@grafana/data';
 import { DirectedGraphOptions } from 'types';
 import { css } from 'emotion';
-import { GrafanaTheme } from '@grafana/data';
 import { useStyles } from '@grafana/ui';
 import ReactFlow, { Node, Edge, MarkerType, Position, ReactFlowInstance, useNodesState, useEdgesState, MiniMap, Controls } from 'react-flow-renderer';
 import dagre from 'dagre';
@@ -249,7 +248,7 @@ export const DirectedGraphPanel: React.FC<Props> = ({ options, data, width, heig
             }
         }
 
-    }, [shouldLayout]);
+    }, [shouldLayout, data, isDragable, setEdges, setNodes]);
 
     if (errorInInputs) {
         return (

@@ -34,3 +34,6 @@ e2e-results/
 
 # Builds
 *.zip
+
+# MD5
+*.md5
